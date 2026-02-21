@@ -1,0 +1,8 @@
+1- App Features defination (no code just define the desired features at initial)
+2- Project structure follow up
+3- App setup (spine)
+4- Models defination
+5- Routes
+6- HTML Templates Design
+7- CSS Designing/JS
+8- Database init initialization, creation and setup of Database

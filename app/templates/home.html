@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<section class="home-hero">
+    <div class="hero-copy">
+        <span class="pill">Plan. Focus. Finish.</span>
+        <h2>Turn scattered thoughts into a focused, finished day.</h2>
+        <p>Organize tasks, move them through the flow, and celebrate every win. Simple, fast, and made for momentum.</p>
+        <div class="cta-row">
+            <a class="btn cta" href="{{ url_for('auth.register') }}">Get Started</a>
+            <a class="btn ghost" href="{{ url_for('auth.login') }}">Log In</a>
+        </div>
+    </div>
+    <div class="hero-card">
+        <div class="card-stack">
+            <div class="stack-item">
+                <span class="dot dot-warm"></span>
+                <div>
+                    <p class="stack-title">Design task flow</p>
+                    <span class="badge inprogress">In Progress</span>
+                </div>
+            </div>
+            <div class="stack-item">
+                <span class="dot dot-cool"></span>
+                <div>
+                    <p class="stack-title">Ship login & home</p>
+                    <span class="badge completed">Completed</span>
+                </div>
+            </div>
+            <div class="stack-item">
+                <span class="dot dot-sun"></span>
+                <div>
+                    <p class="stack-title">Plan tomorrow</p>
+                    <span class="badge pending">Pending</span>
+                </div>
+            </div>
+        </div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+    </div>
+</section>
+{% endblock %}
